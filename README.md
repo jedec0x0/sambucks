@@ -8,7 +8,7 @@ But first, Chris needs to help me compile it.
 
 Here's what we got to do:
 
-**1. Build the binaries and print a gensis block** (src/CryptoNoteConfig.h)
+**1. Build the binaries and print a genesis block** (src/CryptoNoteConfig.h)
 
 We have to compile the binaries as is and run the daemon with the `--print-genesis-tx` argument.  It will print the genesis block transaction.
 
