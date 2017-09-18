@@ -68,4 +68,7 @@ cmake -G "Visual Studio 12 Win64" ..
 ```
 
 And then do Build.
+
+I branched CryptoNote for this project.  You can google "compiling cryptonote" for a lot of guidance.
+
 Githerdone Chris! Good luck!
