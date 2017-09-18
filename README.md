@@ -8,27 +8,16 @@ But first, Chris needs to help me compile it.
 
 Here's what we got to do:
 
-**1. Build the binaries with blank genesis tx hex** (src/CryptoNoteConfig.h)
+**1. Build the binaries and print a gensis block** (src/CryptoNoteConfig.h)
 
-You should leave `const char GENESIS_COINBASE_TX_HEX[]` blank and compile the binaries without it.
-
-Example:
-```
-const char GENESIS_COINBASE_TX_HEX[] = "";
-```
-
-
-**2. Start the daemon to print out the genesis block**
-
-Run your daemon with `--print-genesis-tx` argument. It will print out the genesis block coinbase transaction hash.
+We have to compile the binaries as is and run the daemon with the `--print-genesis-tx` argument.  It will print the genesis block transaction.
 
 Example:
 ```
-furiouscoind --print-genesis-tx
+sambucksd --print-genesis-tx
 ```
 
-
-**3. Copy the printed transaction hash** (src/CryptoNoteConfig.h)
+**2. Copy the printed transaction hash** (src/CryptoNoteConfig.h)
 
 Copy the tx hash that has been printed by the daemon to `GENESIS_COINBASE_TX_HEX` in `src/CryptoNoteConfig.h`
 
@@ -37,13 +26,12 @@ Example:
 const char GENESIS_COINBASE_TX_HEX[] = "013c01ff0001ffff...785a33d9ebdba68b0";
 ```
 
+**3. Recompile the binaries**
 
-**4. Recompile the binaries**
-
-Recompile everything again. Your coin code is ready now. Make an announcement for the potential users and enjoy!
+Recompile everything again. Then it is time to change the world.
 
 
-## Building CryptoNote 
+## Here is the guidance of building
 
 ### On *nix
 
@@ -80,4 +68,4 @@ cmake -G "Visual Studio 12 Win64" ..
 ```
 
 And then do Build.
-Good luck!
+Githerdone Chris! Good luck!
