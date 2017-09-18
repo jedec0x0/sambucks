@@ -1,5 +1,13 @@
 ### Not a cryptocurrency -- a revolution  
 
+`"Cash rules everything around me. C.R.E.A.M. Get the money. Dolla dolla bill ya'll" - Method Man`
+
+Imagine a world where transactions cleared instantly, anonymously, and irreversibly.  Sambucks are inspired.  It's more than a protocol or a few lines of code.  It's a way of thinking -- of living.  It's just the beginning.  Buckle up.  
+
+But first, Chris needs to help me compile it.
+
+Here's what we got to do:
+
 **1. Build the binaries with blank genesis tx hex** (src/CryptoNoteConfig.h)
 
 You should leave `const char GENESIS_COINBASE_TX_HEX[]` blank and compile the binaries without it.
