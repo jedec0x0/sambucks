@@ -1,37 +1,23 @@
-### Not a cryptocurrency -- a revolution  
+# Sambucks
 
-`"Cash rules everything around me. C.R.E.A.M. Get the money. Dolla dolla bill ya'll" - Method Man`
+Sambucks is a secure, decentralized, and anonymous cryptocurrency that is open-source and free for anyone to use.
+This project was inspired by the motivational tool Schrute Bucks.
 
-Imagine a world where transactions are cleared instantly, anonymously, and irreversibly.  Sambucks are inspired.  They're more than a protocol or a few lines of code.  They are a way of thinking -- of living.  This is just the beginning.  Buckle up.  
+https://www.dailymotion.com/video/x2rlg76_schrute-bucks_fun
 
-But first, Chris needs to help me compile it.
+Any naming conventions used by this cryptocurrency are purely coincidental and not meant to represent any specific individual.
 
-Here's what we got to do:
+## Quickstart
 
-**1. Build the binaries and print a genesis block** (src/CryptoNoteConfig.h)
+1. Spin-up a box running Ubuntu 16.04
 
-We have to compile the binaries as is and run the daemon with the `--print-genesis-tx` argument.  It will print the genesis block transaction.
+2. Type the following command to install dependencies:
 
-Example:
-```
-sambucksd --print-genesis-tx
-```
+    ```sudo apt-get update && apt-get install -y boost1.58 libboost1.58-dev```
 
-**2. Copy the printed transaction hash** (src/CryptoNoteConfig.h)
+3. Download and install the sambucks binaries
 
-Copy the tx hash that has been printed by the daemon to `GENESIS_COINBASE_TX_HEX` in `src/CryptoNoteConfig.h`
-
-Example:
-```
-const char GENESIS_COINBASE_TX_HEX[] = "013c01ff0001ffff...785a33d9ebdba68b0";
-```
-
-**3. Recompile the binaries**
-
-Recompile everything again. Then it is time to change the world.
-
-
-## Here is the guidance of building
+## Building CryptoNote 
 
 ### On *nix
 
@@ -68,7 +54,54 @@ cmake -G "Visual Studio 12 Win64" ..
 ```
 
 And then do Build.
+Good luck!
 
-I branched CryptoNote for this project.  You can google "compiling cryptonote" for a lot of guidance.
+### Break down into end to end tests
 
-Githerdone Chris! Good luck!
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [Maven](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Authors
+
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Hat tip to anyone who's code was used
+* Inspiration
+* etc
