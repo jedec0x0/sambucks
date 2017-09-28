@@ -1,6 +1,7 @@
 # Sambucks
 
 Sambucks is a secure, decentralized, and anonymous cryptocurrency that is open-source and free for anyone to use.
+
 This project was inspired by the motivational tool Schrute Bucks.
 
 https://www.dailymotion.com/video/x2rlg76_schrute-bucks_fun
