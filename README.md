@@ -19,8 +19,7 @@ Any naming conventions used by this cryptocurrency are purely coincidental and n
 3. Download and install the sambucks binaries
 
 ## Building Sambucks
-
-### On *nix
+c### On *nix
 
 Dependencies: GCC 4.7.3 or later, CMake 2.8.6 or later, and Boost 1.55.
 
@@ -59,7 +58,7 @@ Good luck!
 
 ## Authors
 
-jedex0x0
+jedec0x0
 
 ## License
 
